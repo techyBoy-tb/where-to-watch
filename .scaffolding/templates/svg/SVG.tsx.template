@@ -1,0 +1,25 @@
+import * as React from 'react';
+import Svg, { Path } from 'react-native-svg';
+
+import { SVGProps } from '@components/svg/_propTypes';
+
+import palette from '@theme/_palette';
+
+// Run your SVG through: https://svgoptimizer.com
+
+const Svg{{NAME}} = (props: SVGProps) => {
+  return (
+    <Svg
+      width={props.width}
+      height={props.height}
+      viewBox="PASTE YOUR VIEW BOX HERE"
+    >
+      <Path
+        fill={props.color ? props.color : palette.white}
+        d="PASTE YOUR SVG CODE HERE"
+      />
+    </Svg>
+  );
+};
+
+export default React.memo(Svg{{NAME}});

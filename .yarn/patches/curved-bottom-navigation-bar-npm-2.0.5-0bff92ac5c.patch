@@ -1,0 +1,34 @@
+diff --git a/lib/commonjs/RNShadow.js b/lib/commonjs/RNShadow.js
+index 6ce7d9873c787b84d7d62fca0e316b8f288f7fd2..3de9547438d2d318c4ea42683e1511f77d2a1bff 100644
+--- a/lib/commonjs/RNShadow.js
++++ b/lib/commonjs/RNShadow.js
+@@ -7,6 +7,6 @@ exports.RNShadow = void 0;
+ 
+ var _reactNative = require("react-native");
+ 
+-const RNShadow = _reactNative.Platform.OS === 'android' ? (0, _reactNative.requireNativeComponent)('RNShadow') : _reactNative.View;
++const RNShadow = _reactNative.View;
+ exports.RNShadow = RNShadow;
+ //# sourceMappingURL=RNShadow.js.map
+\ No newline at end of file
+diff --git a/lib/module/RNShadow.js b/lib/module/RNShadow.js
+index 687df9c743e714c82b248582e6b4e40bf5ef7cdb..18c511fa01639aad5728edf24e20948db8e80d7d 100644
+--- a/lib/module/RNShadow.js
++++ b/lib/module/RNShadow.js
+@@ -1,3 +1,3 @@
+-import { Platform, requireNativeComponent, View } from 'react-native';
+-export const RNShadow = Platform.OS === 'android' ? requireNativeComponent('RNShadow') : View;
++import { View } from 'react-native';
++export const RNShadow = View;
+ //# sourceMappingURL=RNShadow.js.map
+\ No newline at end of file
+diff --git a/src/RNShadow.tsx b/src/RNShadow.tsx
+index fcab00c3342ca5e394cac0180b04e50c6f540fca..766552609b4208d0615748c363d00f6be4133129 100644
+--- a/src/RNShadow.tsx
++++ b/src/RNShadow.tsx
+@@ -1,4 +1,3 @@
+ import { Platform, requireNativeComponent, View } from 'react-native';
+ 
+-export const RNShadow =
+-  Platform.OS === 'android' ? requireNativeComponent('RNShadow') : View;
++export const RNShadow = View;

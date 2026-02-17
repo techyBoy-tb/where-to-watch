@@ -1,0 +1,25 @@
+import { useNavigation } from '@react-navigation/native';
+import React from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import KeyboardAwareScrollView  from '@components/ui/KeyboardAwareScrollView';
+import { Text } from 'react-native-paper';
+
+import Wrap from '@components/Wrap';
+
+interface Props {}
+
+const {{NAME}}Screen: React.FC<Props> = () => {
+  const navigation = useNavigation();
+
+  return (
+    <Wrap>
+      <SafeAreaView style={{ flex: 1 }}>
+        <KeyboardAwareScrollView contentContainerStyle={{ flex: 1 }}>
+          <Text>{{NAME}}</Text>
+        </KeyboardAwareScrollView>
+      </SafeAreaView>
+    </Wrap>
+  );
+};
+
+export default React.memo({{NAME}}Screen);

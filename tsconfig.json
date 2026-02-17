@@ -4,9 +4,42 @@
     "strict": true,
     "moduleResolution": "bundler",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@theme": [
+        "./src/theme/index.ts"
+      ],
+      "@theme/_palette": [
+        "./src/theme/_palette.ts"
+      ],
+      "@theme/typography": [
+        "./src/theme/typography/index.ts"
+      ],
+      "@graphql/*": [
+        "./src/data/graphql/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
+      ],
+      "@test-utils/*": [
+        "./src/test-utils/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@screens/*": [
+        "./src/screens/*"
+      ],
+      "@navigators/*": [
+        "./src/navigators/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
     }
   },
   "include": [

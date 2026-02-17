@@ -1,21 +1,26 @@
 {
   "expo": {
-    "name": "where-to-watch",
+    "name": "Where2Watch",
     "slug": "where-to-watch",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "src/assets/images/icon.png",
+    "icon": "src/assets/images/app-icon.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "scheme": "wheretowatch",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cliffordgareth9519.where2watch",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "src/assets/images/adaptive-icon.png",
+        "foregroundImage": "src/assets/images/app-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cliffordgareth9519.where2watch"
     },
     "web": {
       "favicon": "src/assets/images/favicon.png"
@@ -29,6 +34,12 @@
           "image": "src/assets/images/splash-icon.png"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c4bc3cc0-0b2b-47dc-aba3-e804b06e78d4"
+      }
+    },
+    "owner": "cliffordgareth9519"
   }
 }

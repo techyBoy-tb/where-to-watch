@@ -1,0 +1,12 @@
+import React, { PropsWithChildren } from 'react';
+import { Text } from 'react-native-paper';
+
+interface Props extends PropsWithChildren {
+  
+}
+
+const {{NAME}}: React.FC<Props> = ({ children }) => {
+  return <Text>My Component: {{NAME}}</Text>;
+};
+
+export default React.memo({{NAME}});

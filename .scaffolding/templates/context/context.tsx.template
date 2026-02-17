@@ -1,0 +1,15 @@
+import React from 'react';
+
+interface {{NAME}}Context {}
+
+export const {{name}}Context = React.createContext<{{NAME}}Context>({});
+
+const { Provider } = {{name}}Context;
+
+interface Props {
+  children?: React.ReactNode;
+}
+
+export const {{NAME}}Provider: React.FC<Props> = ({ children }) => {
+  return <Provider value={{}}>{children}</Provider>;
+};
